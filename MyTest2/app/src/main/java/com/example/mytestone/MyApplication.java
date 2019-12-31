@@ -3,6 +3,9 @@ package com.example.mytestone;
 import com.tencent.tinker.loader.app.TinkerApplication;
 import com.tencent.tinker.loader.shareutil.ShareConstants;
 
+/**
+ * 反射实现真实Application
+ */
 public class MyApplication extends TinkerApplication {
 
     public MyApplication() {
