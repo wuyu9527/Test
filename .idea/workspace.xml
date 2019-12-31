@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b54bff21-600e-4a14-b6f7-66bdf082b927" name="Default Changelist" comment=".">
+    <list default="true" id="b54bff21-600e-4a14-b6f7-66bdf082b927" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyTest2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MyTest2/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_module/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_module/lib/main.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flutter_module/flutter_module.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="308">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -65,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyTest2/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -86,6 +96,7 @@
         <option value="$PROJECT_DIR$/MyTest2/app/build.gradle" />
         <option value="$PROJECT_DIR$/MyTest2/.gitignore" />
         <option value="$PROJECT_DIR$/MyTest2/app/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -107,22 +118,6 @@
             <path>
               <item name="flutter_add_android" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_add_android" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_add_android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_add_android" type="462c0819:PsiDirectoryNode" />
-              <item name="flutter_module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_add_android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_add_android" type="462c0819:PsiDirectoryNode" />
-              <item name="MyTest2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_add_android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_add_android" type="462c0819:PsiDirectoryNode" />
-              <item name="MyTest2" type="462c0819:PsiDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -181,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577780698109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1577780801752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577780801752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -223,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flutter_module/flutter_module.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="308">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -256,7 +258,14 @@
     <entry file="file://$PROJECT_DIR$/MyTest2/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

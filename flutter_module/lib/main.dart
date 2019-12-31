@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+///测试flutter_module上传成功
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
