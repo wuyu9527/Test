@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="hyk_update_app_files"
+        path="."/>
+
+    <root-path
+        name="unj"
+        path="" />
+</paths>

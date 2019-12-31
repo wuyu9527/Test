@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mytestone">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 外部存储读权限，调试工具加载本地补丁需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="io.flutter.embedding.android.FlutterActivity"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            />
+
+        <activity android:name=".FlutterTextActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".ThirdActivity" />
+
+        <service android:name=".MyIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f0d0ccbc429a519dc42a9100c6a7ba6a127658da" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="28105204-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="fe344ec67f7b0486cc8a52f6d96d18c3" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCI0McUSJYHafVF18wkFNvKX9o9Po/TgYMsacjz9zzn6EtMAU7A33beIfso3j6JEsUm5aE9Ry0/L1zX/Jm5Oux3v5PyDR8Od92ZcRoWCLmhJTQ5roncbDtojEa5AcGa8jPFvztCLTXBFjDM485IB0GpVX6Nfulgogg5KXBQiKmfHvHNkmtvgCeJXe1nf91it4DJEygfvWi7IELeqUp6mhBo+3F9gwieNWZRIn1CrctJQs3djPubjMZ0P/YoGrl9MNpSLogRiqNSbeephZhVhLdXPnxgz/2PkxxKF9zAFEcPjcvJvH76H8i7opfmxGpa5VpYXLS9bmTkkwHJhYI6YxBAgMBAAECggEAT5uaF3CFvtBaVB1DYWytafYAUw+x1meuP2JSAXNpTVV2CEuauXpTD747LqRSJXDggNDURi0k2mqRXVBI3DyfEc85RYn5S7+HjMtqYMdTeGeBhrA2QZpzTN6neDltUAq+y3zHtoNNdKZJp7Hq1yf9/w2pVfLxAAuouqRH/Bmcj9vhHBTlKnsHwG9NTY2bAVvYVS0goJ18l2XV7wW5iGN8OZN8R/eyq5IWM65cjaI3Oy3C6cTVTYi9OCcxZH9amkyDpu6nujux9dEzgwaOX50SREITWhc631OmFf4ll7wbwxiX01rafY+hRBWif4aMsrMkKJmCNiyviqg1SeuMObj2CQKBgQDkGmgztB+C4XERIiS1jKPG5eNny4sbd/S5yaPfI3a6L4oWpm/7niVU4Pnz1vzzkhnBnxTo5EqaX8yCGC0fttrjK7Dx3+rmwawNK097RaDfBYnOua+/xa3xLi9Bvvi4LdJYFY5LkPO6y30V+7/kwOmYwgRlFyArWX/EsUE2EPJKswKBgQDZ4XH/CuW0cK18w2svXIBYszwm3jrPFxycqwcQkvgCJ9KlFD7ELtouws14dCRQMfasJ7DOMG7TQ7h1o3wCS3pMRR2O5ZRwCdjnjDgqrng814ks0RyreGJtkumcm9/vqbxp/RaVnC9c1eHCh6AmjVO4hthZgYvFN4C0xeRb7VLXOwKBgDS63gfFxdsNnoOlbvMBFgMutYkTBo9NBafFMzqsChA0WSmvRAfYoSyj7WQu+L6dsZKO4diMnapeJvqT+CpyrNsDCJ6Bct3xO4K31mHa0Lt9nkPJrRUZ74HneUkrineZMBzorsJNOeqei8X/MncBGX8UqstrsyYSRHUFvNtww3H9AoGAZLGcTZJrtoicpRxrXOgTKOss0YnDBBJaVs1z5mUF2XkuELzahTBiBVpiO1jxr15n8ggl3iTkEx8pELUNisH3M2h90JypjV3/sINNMeyQBQ5Xhy7dYSGx25IaBRbE165KNXGSDnKwMOdn/s9PZIHMP2uScUs9nVeZU/JhJ1r2/iECgYAN7W4PYkmMA+H/8hgkzF8iRBn5CxjWGPvnzqkhjcjABsxYhWYWMc2aXI8pVOJnVJ2hjayCdJxBj94twSNTmdEEgU61KRw6tgmjNuPbUEtSg2DWvMUclKZIZwu7RDeKWxxL81xE5t7iHZhXj4tiYt1/G1F2gRg0pWwaWO+BgT3YNw==" />
+
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.hotfix.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.mytestone.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/new_app_file_paths" />
+        </provider>
+    </application>
+
+</manifest>
