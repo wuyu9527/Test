@@ -98,23 +98,24 @@ public class MainActivity extends AppCompatActivity {
                 startWakenThread();
                 break;
             case R.id.button:
-//                Crashlytics.setString("username", "这是账号");
-//                Crashlytics.setString("password", "这是密码");
-//                Crashlytics.setUserName("直接的用户名");
-//                Crashlytics.setUserEmail("直接的Email");
-//                Crashlytics.setUserIdentifier("直接的用户标识");
-//                Crashlytics.setString("手机厂商", SystemUtil.getDeviceBrand());
-//                Crashlytics.setString("手机型号", SystemUtil.getSystemModel());
-//                Crashlytics.setString("手机当前系统语言", SystemUtil.getSystemLanguage());
-//                Crashlytics.setString("Android系统版本号", SystemUtil.getSystemVersion());
-//                Crashlytics.setString("手机IMEI", SystemUtil.getIMEI(getApplicationContext()));
-//                Crashlytics.getInstance().crash();
-//                try {
-//                    Crashlytics.getInstance().crash();
-//                } catch (Exception e) {
-//                    Crashlytics.logException(e);
-//                }
-
+                Crashlytics.setString("username", "这是账号");
+                Crashlytics.setString("password", "这是密码");
+                Crashlytics.setUserName("直接的用户名");
+                Crashlytics.setUserEmail("直接的Email");
+                Crashlytics.setUserIdentifier("直接的用户标识");
+                Crashlytics.setString("手机厂商", SystemUtil.getDeviceBrand());
+                Crashlytics.setString("手机型号", SystemUtil.getSystemModel());
+                Crashlytics.setString("手机当前系统语言", SystemUtil.getSystemLanguage());
+                Crashlytics.setString("Android系统版本号", SystemUtil.getSystemVersion());
+                Crashlytics.setString("手机IMEI", SystemUtil.getIMEI(getApplicationContext()));
+                Crashlytics.getInstance().crash();
+                try {
+                    Crashlytics.getInstance().crash();
+                } catch (Exception e) {
+                    Crashlytics.logException(e);
+                }
+                break;
+            case R.id.butGotoFlutter:
                 //flutter module引入
 //                startActivity(
 //                        FlutterActivity.createDefaultIntent(this)
