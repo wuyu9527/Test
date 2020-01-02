@@ -37,8 +37,7 @@ public class MyApplicationLike extends DefaultApplicationLike {
     @Override
     public void onCreate() {
         super.onCreate();
-
-        SophixManager.getInstance().queryAndLoadNewPatch();
+//        SophixManager.getInstance().queryAndLoadNewPatch();
         //flutter module引入
 //        // Instantiate a FlutterEngine.
 //        flutterEngine = new FlutterEngine(this);

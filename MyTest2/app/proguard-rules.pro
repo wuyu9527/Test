@@ -19,7 +19,10 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-
+-ignorewarnings
+-keep class * {
+    public private *;
+}
 #基线包使用，生成mapping.txt
 -printmapping mapping.txt
 #生成的mapping.txt在app/build/outputs/mapping/release路径下，移动到/app路径下
@@ -36,3 +39,9 @@
 }
 # 如果不使用android.support.annotation.Keep则需加上此行
 # -keep class com.my.pkg.SophixStubApplication$RealApplicationStub
+
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
+# tinker混淆规则
+-dontwarn com.tencent.tinker.**
+-keep class com.tencent.tinker.** { *; }
